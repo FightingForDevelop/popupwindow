@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--@author zxx, @date 2017/3/21, @class HonestStatementActivity, @desc 展示廉洁声明的内容-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/nei_bg"
+              android:id="@+id/myroot"
+    android:orientation="vertical">
+    <include
+        layout="@layout/include_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scrollbars="none"
+        android:layout_weight="1">
+        <!--android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_warning"
+                android:layout_marginBottom="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*若您不签署廉洁声明，则无法继续使用"
+                android:textColor="#ff0000"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本人:"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:text="李建"
+                    android:textColor="#999999"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编号:"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:text="152xx"
+                    android:textColor="#999999"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="是xxxx信息技术有限责任公司（以下简称“公司”）员工.为维护股东、客户和公司的合法权益,防止违法违规和违纪行为的发生,现就本人在公司任职期间的廉洁事项,作出以下声明：\n\n
+1.严格遵守国家法律法规、公司章程、规章制度和有关合同特别约定.\n\n
+2.保守公司商业秘密,不在履行职责之外使用这些商业秘密,或与他人交换以获取不正当利益.商业秘密包括但不限于经营信息、客户信息、技术资料、薪酬待遇等相关信息.\n\n
+3.遵守公司规定,不与公司订立合同或进行交易,获取不正当利益,损害公司利益.\n\n
+4.遵守公司规定,不利用公司资源谋取私利;未经公司允许,不在外兼职、自营、顾问或投资与公司相同、类似或存在竞争关系的业务或公司,无论是否取得收入或者获得其他利益.\n\n
+5.秉公办事,不任人唯亲、营私舞弊,不利用职权从事不正当的有偿中介活动或安排个人的业务承揽活动.\n\n
+6.除公司正常业务佣金外,不以任何方式给予客户及其相关单位和个人、公司员工、政府工作人员或其他第三方佣金、折扣费、中介费、礼金、回扣、有价证券、支付凭证、贵重物品等,或者向对方进行上述行为的暗示.\n\n
+7.不向供应商、客户及其相关单位和个人索取回扣或接受贿赂,包括但不限于礼品、金钱或服务.\n\n
+8.不参加供应商、客户及其相关单位和个人安排的可能影响公平交易的宴请、健身、娱乐等活动;不参与任何形式的赌博,不通过赌博方式收受与公司有业务往来单位及个人的财物.\n\n
+9.不要求或接受供应商、客户及其相关单位和人员、公司其他员工报销任何应由本人个人承担的费用.\n\n
+10.不要求供应商、客户及其相关单位和人员、公司其他员工为本人、配偶、子女及其他特定关系人提供各种不正当的便利,包括但不限于购买或装修住房、配偶子女上学或工作安排以及出国出境、旅游等.\n\n
+11.积极配合公司对涉嫌不廉洁的商业行为进行调查.\n\n
+以上不廉洁行为包括但不限于：利用本人主管、分管、经手、决定、处理或经办一定事项的权力,依靠本人职权指挥、影响下属或利用公司其他员工的工作权限,依靠本人职权控制、左右其他人员或者利用对本人有所求人员的权限,实施或共同实施,或指使、暗示他人实施的行为.\n\n
+违反以上声明,本人自愿承担相应责任和法律后果,包括但不限于：依据公司有关规章制度作出的处理决定;公司有权视本人严重违反公司规章制度情况单方面解除与本人的劳动合同、聘用合同;给公司或第三方造成经济损失的,独立承担赔偿责任;利用公司资源谋取私利的,所获利益全部上交公司;涉嫌犯罪的,独立承担司法机关追究的刑事责任."
+                android:textColor="@color/top"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="声明人:"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_state_man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="李建"
+                    android:textColor="#999999"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日期:"
+                    android:textColor="#333333"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:text="2017年3月22日"
+                    android:textColor="#999999"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_approve"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></include>
+</LinearLayout>

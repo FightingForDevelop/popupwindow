@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">popwindow</string>
+    <string name="honest_state">员工廉洁声明</string>
+    <string name="honest_close">关闭</string>
+    <string name="honest_promise">同意并承诺</string>
+</resources>
